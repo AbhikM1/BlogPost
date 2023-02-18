@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5584AC"
+    tools:context=".UserProfileFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="194dp"
+        app:cardBackgroundColor="#187498"
+        app:cardCornerRadius="35dp"
+        app:cardElevation="10dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        app:strokeColor="#3BACB6"
+        app:strokeWidth="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="181dp"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/view2"
+                android:layout_alignTop="@id/view2"
+                android:layout_marginStart="91dp"
+                android:layout_marginTop="23dp"
+                android:layout_marginBottom="1dp"
+                android:text="Username"
+                android:textColor="@android:color/white"></TextView>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/view2"
+                android:layout_alignBottom="@id/view2"
+                android:layout_marginRight="-39dp"
+                android:layout_marginBottom="-41dp"
+                android:text="3000 following"
+                android:textColor="@android:color/white"></TextView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/view2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true"
+                android:elevation="12dp"
+                app:cardCornerRadius="100dp"
+                app:strokeColor="#47B5FF"
+                app:strokeWidth="2dp">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/blankuser"></ImageView>
+            </com.google.android.material.card.MaterialCardView>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignStart="@id/textView2"
+                android:layout_alignBottom="@id/textView2"
+                android:layout_marginStart="133dp"
+                android:layout_marginRight="-103dp"
+                android:layout_marginBottom="66dp"
+                android:background="@drawable/roundbuttonunpressed"
+                android:text="Follow"
+                android:textSize="10sp" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/editprofile"
+                android:layout_width="51dp"
+                android:layout_height="54dp"
+                android:layout_alignStart="@id/button2"
+                android:layout_alignTop="@id/button2"
+                android:layout_marginStart="135dp"
+                android:layout_marginTop="6dp"
+                android:clickable="true"
+                android:src="@drawable/ic_edit"
+                app:fabCustomSize="40dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editprofile"
+                android:layout_alignStart="@id/textView2"
+                android:layout_alignTop="@id/textView2"
+                android:layout_marginStart="87dp"
+                android:layout_marginTop="2dp"
+                android:text="3000 followers"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/posts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textView3"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="1dp"
+                android:layout_toEndOf="@+id/textView3"
+                android:text="3000 posts"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="531dp"
+        android:layout_marginTop="200dp" />
+</FrameLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    tool:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="Sign Out" />
+        <item
+            android:id="@+id/nav_makepost"
+            android:icon="@drawable/ic_makepost"
+            android:title="Create Post" />
+    </group>
+    <item android:title="Other Stuff"
+        >
+        <menu>
+            <item
+                android:id="@+id/nav_userprofile"
+                android:icon="@drawable/ic_profile"
+                android:title="Profile" />
+            <item
+                android:id="@+id/nav_otheruserprofile"
+                android:icon="@drawable/ic_profile"
+                android:title="Other Users" />
+        </menu>
+    </item>
+</menu>
